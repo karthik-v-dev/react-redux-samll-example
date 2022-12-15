@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { useDispatch } from "react-redux";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from "react-bootstrap/Button";
+import {Button} from "react-bootstrap";
 
 function Score(props) {
   const dispatch = useDispatch();
@@ -17,7 +17,7 @@ function Score(props) {
         {props.mscore.extras.wd},&nbsp;lb:{props.mscore.extras.lb},&nbsp;by:
         {props.mscore.extras.by}
       </h1>
-      <Button className="btn btn-danger"
+      <Button className="btn btn-primary"
         onClick={() => {
           dispatch({ type: 1 });
         }}
@@ -25,7 +25,7 @@ function Score(props) {
         1
       </Button>
       &nbsp;
-      <Button className="btn btn-danger"
+      <Button className="btn btn-primary"
         onClick={() => {
           dispatch({ type: 2 });
         }}
@@ -33,7 +33,7 @@ function Score(props) {
         2
       </Button>
       &nbsp;
-      <Button className="btn btn-danger"
+      <Button className="btn btn-primary"
         onClick={() => {
           dispatch({ type: 3 });
         }}
@@ -41,7 +41,7 @@ function Score(props) {
         3
       </Button>
       &nbsp;
-      <Button className="btn btn-danger"
+      <Button className="btn btn-warning"
         onClick={() => {
           dispatch({ type: 4 });
         }}
@@ -49,7 +49,7 @@ function Score(props) {
         4
       </Button>
       &nbsp;
-      <Button className="btn btn-danger"
+      <Button className="btn btn-warning"
         onClick={() => {
           dispatch({ type: 6 });
         }}
@@ -65,7 +65,7 @@ function Score(props) {
         Wicket
       </Button>
       &nbsp;
-      <Button className="btn btn-danger"
+      <Button className="btn btn-primary"
         onClick={() => {
           dispatch({ type: "lb" });
         }}
@@ -73,7 +73,7 @@ function Score(props) {
         Lb
       </Button>
       &nbsp;
-      <Button className="btn btn-danger"
+      <Button className="btn btn-primary"
         onClick={() => {
           dispatch({ type: "wd" });
         }}
@@ -81,7 +81,7 @@ function Score(props) {
         Wide
       </Button>
       &nbsp;
-      <Button className="btn btn-danger"
+      <Button className="btn btn-primary"
         onClick={() => {
           dispatch({ type: "nb" });
         }}
@@ -89,7 +89,7 @@ function Score(props) {
         Nb
       </Button>
       &nbsp;
-      <Button className="btn btn-danger"
+      <Button className="btn btn-primary"
         onClick={() => {
           dispatch({ type: "by" });
         }}
